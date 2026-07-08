@@ -844,6 +844,73 @@ a { color: inherit; }
   .hero__polaroid { transform: rotate(-4deg); }
 }
 
+/* ---------- Rideau d'ouverture — mobile uniquement ---------- */
+.curtain { display: none; }
+
+@media (max-width: 900px) {
+  .curtain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    position: fixed;
+    inset: 0;
+    z-index: 3000;
+    background:
+      radial-gradient(ellipse at 50% 120%, rgba(59, 122, 100, 0.4), transparent 60%),
+      var(--green-900);
+    animation: curtainUp 0.85s cubic-bezier(0.7, 0, 0.3, 1) 1.55s forwards;
+    pointer-events: none;
+  }
+  @keyframes curtainUp {
+    to { transform: translateY(-101%); visibility: hidden; }
+  }
+  .curtain__tree {
+    width: 58px;
+    height: 58px;
+    color: var(--cream);
+    opacity: 0;
+    animation: curtainItem 0.7s var(--ease) 0.15s forwards;
+  }
+  .curtain__name {
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    font-weight: 500;
+    color: var(--cream);
+    opacity: 0;
+    animation: curtainItem 0.7s var(--ease) 0.35s forwards;
+  }
+  .curtain__line {
+    width: 0;
+    border-top: 1.5px solid var(--gold);
+    animation: curtainLine 0.7s var(--ease) 0.55s forwards;
+  }
+  @keyframes curtainItem {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes curtainLine {
+    to { width: 74px; }
+  }
+
+  /* la chorégraphie du hero attend la levée du rideau */
+  .hero__arch { animation-delay: 2s; }
+  .hero__arch img { animation-delay: 2s; }
+  .hline__in { animation-delay: 2.2s; }
+  .hline__in--2 { animation-delay: 2.32s; }
+  .hline__in--3 { animation-delay: 2.44s; }
+  .hero-in--eyebrow { animation-delay: 2.1s; }
+  .hero-in--intro   { animation-delay: 2.6s; }
+  .hero-in--actions { animation-delay: 2.75s; }
+  .hero-in--trust   { animation-delay: 2.9s; }
+  .hero__polaroid { animation-delay: 2.85s; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .curtain { display: none !important; }
+}
+
 /* ---------- Reveal ---------- */
 .reveal {
   opacity: 0;
