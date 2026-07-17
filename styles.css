@@ -4,6 +4,101 @@
    alternées crème/vert, savoir-faire, univers, créations.
    ========================================================== */
 
+/* ==========================================================
+   POLICES — auto-hébergées dans assets/font/
+   Fraunces, Karla, Caveat · SIL Open Font License 1.1.
+   Sous-ensembles latin + latin-ext uniquement (site en français).
+   Rapatriées depuis Google Fonts le 17 juillet 2026 : le navigateur ne
+   contacte plus aucun serveur de Google pour les charger, donc plus
+   aucune IP de visiteur transmise à Google sans consentement.
+   ========================================================== */
+
+/* --- Fraunces — variable, opsz 9..144 · wght 100..900 --- */
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("assets/font/fraunces-normal-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("assets/font/fraunces-normal-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("assets/font/fraunces-italic-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("assets/font/fraunces-italic-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* --- Karla — variable en romain (wght 200..800), statique en italique (400) --- */
+@font-face {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("assets/font/karla-normal-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url("assets/font/karla-normal-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: "Karla";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font/karla-italic-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Karla";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/font/karla-italic-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* --- Caveat — variable, wght 400..700 --- */
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("assets/font/caveat-normal-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("assets/font/caveat-normal-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
 :root {
   --green-950: #0D2B21;
   --green-900: #123B30;
@@ -727,13 +822,54 @@ a { color: inherit; }
 .trouver__list a { text-decoration: none; font-weight: 700; }
 .trouver__list strong { color: var(--green-800); }
 
-.trouver__map { position: relative; min-height: 520px; }
-.trouver__map iframe {
+/* Cartouche « nous trouver » — le plan part en lien sortant, exprès :
+   aucune iframe Google, donc aucune requête tierce à l'ouverture. */
+.trouver__map {
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  padding: clamp(48px, 6vw, 80px) var(--pad-x) clamp(48px, 6vw, 80px) clamp(40px, 5vw, 72px);
+  color: var(--cream);
+  background:
+    radial-gradient(rgba(241, 234, 216, 0.06) 1.2px, transparent 1.2px),
+    radial-gradient(ellipse at 15% 110%, rgba(59, 122, 100, 0.35), transparent 62%),
+    var(--green-900);
+  background-size: 22px 22px, auto, auto;
+}
+.trouver__sprig {
   position: absolute;
-  inset: 0;
-  width: 100%; height: 100%;
-  border: 0;
-  filter: sepia(0.28) saturate(0.75) hue-rotate(65deg) brightness(1.02);
+  right: clamp(-18px, -1vw, 0px);
+  bottom: -30px;
+  width: clamp(90px, 9vw, 130px);
+  color: var(--gold);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.trouver__card { position: relative; z-index: 2; max-width: 40ch; }
+.trouver__addr {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 2.6vw, 2.35rem);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--cream);
+  margin-bottom: 20px;
+}
+.trouver__addr em { font-style: italic; font-weight: 400; color: var(--gold); }
+.trouver__way {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: rgba(241, 234, 216, 0.82);
+  padding-top: 18px;
+  margin-bottom: 26px;
+  border-top: 1px solid rgba(241, 234, 216, 0.18);
+}
+.trouver__note {
+  margin-top: 16px;
+  font-size: 0.76rem;
+  color: rgba(241, 234, 216, 0.5);
 }
 
 /* ---------- Footer ---------- */
@@ -778,15 +914,24 @@ a { color: inherit; }
 .footer__col a:hover { color: var(--gold); }
 .footer__legal {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 10px 24px;
   border-top: 1px solid rgba(244, 238, 223, 0.12);
   padding-top: 20px;
   padding-bottom: 24px;
   font-size: 0.76rem;
   color: rgba(244, 238, 223, 0.45);
 }
+.footer__legal a {
+  text-decoration: none;
+  color: rgba(244, 238, 223, 0.7);
+  transition: color 0.35s var(--ease);
+}
+.footer__legal a:hover { color: var(--gold); }
+.footer__legal a[aria-current="page"] { color: var(--gold); }
+.footer__legal-nav { display: flex; flex-wrap: wrap; gap: 8px 18px; }
 
 /* ---------- Animation d'entrée du hero ---------- */
 /* photo : balayage vertical + settle du zoom */
@@ -959,7 +1104,8 @@ a { color: inherit; }
 
   .trouver { grid-template-columns: 1fr; }
   .trouver__infos { padding: var(--section-pad) 28px 36px; }
-  .trouver__map { min-height: 380px; }
+  .trouver__map { min-height: 0; padding: 52px 28px 60px; }
+  .trouver__sprig { width: 84px; opacity: 0.4; }
 
   .footer__inner { grid-template-columns: 1fr 1fr; gap: 32px; }
 }
@@ -968,4 +1114,189 @@ a { color: inherit; }
   .creations__grid { grid-template-columns: 1fr; }
   .nav__tel { display: none; }
   .footer__inner { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================
+   PAGES LÉGALES — « la liste des ingrédients »
+   Mentions légales + Confidentialité. Même papier, même encre,
+   même filets que le reste de la maison. Ce que le site contient,
+   écrit en toutes lettres, comme au dos d'un paquet.
+   ========================================================== */
+
+.legal-head {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: clamp(128px, 17vh, 196px) 28px clamp(34px, 5vh, 56px);
+}
+.legal-head h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  color: var(--green-900);
+  margin-bottom: 22px;
+}
+.legal-head h1 em { font-style: italic; font-weight: 400; color: var(--gold); }
+.legal-lede {
+  max-width: 56ch;
+  font-size: clamp(1rem, 1.4vw, 1.1rem);
+  color: rgba(22, 56, 45, 0.8);
+}
+.legal-maj {
+  margin-top: 26px;
+  padding-top: 14px;
+  border-top: var(--hairline);
+  max-width: 56ch;
+  font-size: 0.78rem;
+  color: rgba(22, 56, 45, 0.6);
+}
+
+.legal {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 28px clamp(48px, 6vh, 80px);
+}
+.legal > p, .legal > ul { max-width: 68ch; }
+.legal p { font-size: 0.95rem; color: rgba(22, 56, 45, 0.85); }
+.legal p + p { margin-top: 1em; }
+.legal strong { color: var(--green-800); }
+.legal code {
+  font-size: 0.86em;
+  background: var(--cream-deep);
+  border-radius: 3px;
+  padding: 1px 6px;
+}
+.legal h2 {
+  font-size: clamp(1.4rem, 2.4vw, 1.95rem);
+  margin: clamp(44px, 6vh, 68px) 0 16px;
+  padding-top: 22px;
+  border-top: var(--hairline);
+}
+.legal h3 {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--green-700);
+  margin: 28px 0 10px;
+}
+
+/* Puces : un grain de blé doré */
+.legal ul { list-style: none; margin: 14px 0; padding-left: 0; }
+.legal li {
+  position: relative;
+  padding: 5px 0 5px 24px;
+  font-size: 0.95rem;
+  color: rgba(22, 56, 45, 0.85);
+}
+.legal li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  width: 5px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--gold);
+  transform: rotate(22deg);
+}
+
+.legal a:not(.btn) {
+  color: var(--green-800);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(185, 143, 78, 0.65);
+  transition: color 0.35s var(--ease), text-decoration-color 0.35s var(--ease);
+}
+.legal a:not(.btn):hover { color: var(--gold); text-decoration-color: var(--gold); }
+
+/* Fiche d'identité — l'étiquette collée au dos du paquet */
+.legal-id {
+  margin: 20px 0 10px;
+  max-width: 68ch;
+  border: var(--hairline);
+  border-radius: 4px;
+  background: var(--cream-soft);
+  overflow: hidden;
+}
+.legal-id li {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 11px 18px;
+}
+.legal-id li::before { content: none; }
+.legal-id li + li { border-top: var(--hairline); }
+.legal-id .k {
+  flex: 0 0 auto;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(22, 56, 45, 0.55);
+  line-height: 1.7;
+}
+.legal-id .lead { flex: 1 1 auto; min-width: 16px; }
+.legal-id .v {
+  flex: 0 1 auto;
+  text-align: right;
+  font-weight: 500;
+  color: var(--green-900);
+}
+
+/* Encadré source — le site dit d'où il tient ce qu'il affirme */
+.legal-source {
+  max-width: 68ch;
+  margin: 22px 0;
+  padding: 18px 22px;
+  background: var(--cream-deep);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 4px 4px 0;
+  font-size: 0.88rem;
+  color: rgba(22, 56, 45, 0.82);
+}
+.legal-source strong { color: var(--green-900); }
+.legal-source p + p { margin-top: 0.9em; }
+
+/* Séparateur — le filet à l'arbre, repris des en-têtes de section */
+.legal-sep {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 300px;
+  margin: clamp(46px, 6vh, 72px) auto;
+  color: var(--gold);
+}
+.legal-sep i { flex: 1; border-top: 1px solid rgba(185, 143, 78, 0.45); }
+
+/* Trou assumé : ce qui n'a pas pu être vérifié se voit. */
+.manque {
+  background: #FFD9E2;
+  color: #7A0B26;
+  padding: 1px 7px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 0.94em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.legal-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: clamp(46px, 6vh, 70px);
+  padding-top: 30px;
+  border-top: 1px solid var(--green-800);
+}
+
+/* Pages légales : nav toujours posée sur le crème, pas de rideau */
+.page-legal .nav { box-shadow: 0 1px 0 rgba(22, 56, 45, 0.14); }
+
+@media (max-width: 700px) {
+  .legal-id li { flex-wrap: wrap; gap: 2px; }
+  .legal-id .lead { display: none; }
+  .legal-id .v { text-align: left; width: 100%; }
 }

@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pain'Prenelle — Artisan Boulanger Pâtissier à Nantes</title>
   <meta name="description" content="Pain'Prenelle, boulangerie-pâtisserie artisanale à Nantes (Doulon-Bottière). Pain au levain maison, viennoiseries et créations uniques, du lundi au samedi." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Caveat:wght@500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=25" />
+  <link rel="preload" href="assets/font/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/font/karla-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css?v=26" />
   <link rel="icon" href="assets/logo.jpg" />
 </head>
 <body>
@@ -347,11 +346,25 @@
       </ul>
       <a class="btn btn--solid reveal" href="https://maps.google.com/?q=Pain+Prenelle+149+route+de+Sainte+Luce+44300+Nantes" target="_blank" rel="noopener">Itinéraire <span aria-hidden="true">↗</span></a>
     </div>
+    <!-- Pas de carte intégrée : une iframe Google chargerait Google dans le
+         navigateur du visiteur dès l'ouverture de la page, sans lui demander.
+         Le plan s'ouvre chez Google d'un clic, quand le visiteur le décide. -->
     <div class="trouver__map reveal">
-      <iframe
-        title="Plan d'accès Pain'Prenelle"
-        src="https://www.google.com/maps?q=Pain%27Prenelle+149+route+de+Sainte+Luce+44300+Nantes&output=embed"
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <svg class="trouver__sprig" viewBox="0 0 120 320" aria-hidden="true"><use href="#wheat-sprig"/></svg>
+      <div class="trouver__card">
+        <p class="eyebrow eyebrow--gold">Le quartier</p>
+        <p class="trouver__addr">Doulon —<br/><em>Bottière.</em></p>
+        <p class="trouver__way">
+          À quelques minutes à pied de l'arrêt Souillarderie, et le
+          stationnement se trouve le long de la route de Sainte&nbsp;Luce.
+        </p>
+        <a class="btn btn--outline-cream"
+           href="https://maps.google.com/?q=Pain+Prenelle+149+route+de+Sainte+Luce+44300+Nantes"
+           target="_blank" rel="noopener noreferrer">
+          Ouvrir le plan <span aria-hidden="true">↗</span>
+        </a>
+        <p class="trouver__note">Le plan s'ouvre sur Google Maps, dans un nouvel onglet.</p>
+      </div>
     </div>
   </section>
 
@@ -383,7 +396,12 @@
     </div>
     <div class="footer__legal container">
       <span>© 2026 Pain’Prenelle — Artisan boulanger pâtissier à Nantes</span>
-      <span>Mentions légales</span>
+      <nav class="footer__legal-nav" aria-label="Liens légaux">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
+        <a href="confidentialite.html#cookies">Cookies</a>
+      </nav>
+      <span>Création <a href="https://vokumagency.com" target="_blank" rel="noopener">Vokum</a></span>
     </div>
   </footer>
 
@@ -494,6 +512,6 @@
     </defs>
   </svg>
 
-  <script src="main.js?v=4"></script>
+  <script src="main.js?v=5"></script>
 </body>
 </html>

@@ -1,10 +1,14 @@
 // Pain'Prenelle — interactions
 
-// Toujours arriver en haut de page (ouverture + refresh)
-if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-if (location.hash) history.replaceState(null, '', location.pathname + location.search);
-window.scrollTo(0, 0);
-window.addEventListener('pageshow', () => window.scrollTo(0, 0));
+// Toujours arriver en haut de page (ouverture + refresh) — accueil uniquement.
+// Les pages légales gardent leur ancre : confidentialite.html#cookies doit
+// atterrir sur la section Cookies, pas être ramenée en haut.
+if (!document.body.classList.contains('page-legal')) {
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  window.scrollTo(0, 0);
+  window.addEventListener('pageshow', () => window.scrollTo(0, 0));
+}
 
 // Nav scrolled state
 const nav = document.getElementById('nav');
